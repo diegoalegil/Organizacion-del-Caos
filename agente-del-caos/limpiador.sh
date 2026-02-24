@@ -53,7 +53,6 @@ for archivo in *.pdf; do
     fi
 done
 
-# Archivos vacíos
 for archivo in *; do
     if [ -f "$archivo" ] && [ ! -s "$archivo" ]; then
         mv "$archivo" VACIOS/
